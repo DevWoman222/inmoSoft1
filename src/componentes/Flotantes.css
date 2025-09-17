@@ -1,0 +1,92 @@
+.flotantes-container {
+   position: fixed;
+  bottom: 20px;
+  left: 20px;  /* ← Ahora se ubican a la izquierda */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ← Alinea los botones hacia la izquierda */
+  gap: 10px;
+}
+
+/* Botones flotantes genéricos */
+.flotante-btn {
+  width: 52px;
+  height: 52px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.flotante-btn:hover {
+  transform: scale(1.1);
+  background-color: #f3f3f3;
+}
+
+/* Colores específicos */
+.whatsapp {
+  color: #25d366;
+  border-color: #25d366;
+}
+
+.campana {
+  color: #f5a623;
+  border-color: #f5a623;
+}
+
+/* Popup */
+.popup-notificaciones {
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  width: 320px;
+  max-height: 400px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.titulo-popup {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.notificacion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.notificacion-item:last-child {
+  border-bottom: none;
+}
+
+.icono {
+  font-size: 18px;
+}
+
+.texto {
+  flex: 1;
+  color: #444;
+  line-height: 1.4;
+  font-weight: bold;
+}

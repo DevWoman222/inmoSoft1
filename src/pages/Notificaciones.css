@@ -1,0 +1,22 @@
+
+.notificaciones-box {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+  }
+  
+  .notificaciones-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notificaciones-box li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  

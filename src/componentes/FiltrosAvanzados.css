@@ -1,0 +1,101 @@
+.filtros-avanzados {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .filtros-avanzados select {
+    padding: 8px;
+    border: 2px solid #74B9E7;
+    border-radius: 5px;
+    min-width: 160px;
+    font-size: 14px;
+  }
+  
+  .extras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .extras label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  
+  .filtros-avanzados-wrapper {
+    background-color: #fff;
+    border: 2px solid #74B9E7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .filtros-avanzados-wrapper h3 {
+    margin-bottom: 16px;
+    color: #74B9E7;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .filtros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  .campo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .campo input,
+  .campo select {
+    padding: 10px;
+    border: 1.5px solid #74B9E7;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  
+  .checkboxes label {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

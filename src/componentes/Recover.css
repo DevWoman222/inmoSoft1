@@ -1,0 +1,72 @@
+/* Contenedor general centrado en pantalla con imagen de fondo */
+.recover-container {
+  display: flex;                       /* Flexbox para centrar contenido */
+  justify-content: center;            /* Centra horizontalmente */
+  align-items: center;                /* Centra verticalmente */
+  height: 100vh;                      /* Ocupa toda la altura de la pantalla */
+  background-image: url('/src/assets/fondo.jpg'); /* Imagen de fondo */
+  background-size: cover;             /* Escala la imagen para cubrir todo */
+  background-position: center;        /* Centra la imagen */
+  background-repeat: no-repeat;       /* No repetir la imagen */
+}
+
+/* Tarjeta o caja blanca donde va el contenido del formulario */
+.recover-card {
+  background-color: #fff;             /* Fondo blanco */
+  padding: 40px;                      /* Espaciado interior */
+  border-radius: 12px;                /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  width: 100%;
+  max-width: 400px;                   /* Ancho máximo para que no crezca demasiado */
+  box-sizing: border-box;            /* Incluye padding y border en el ancho total */
+  text-align: center;                /* Centra el texto dentro */
+}
+
+/* Imagen del logo */
+.recover-logo img {
+  width: 120px;                       /* Tamaño del logo */
+  margin-bottom: 10px;               /* Espacio debajo del logo */
+}
+
+/* Input de texto (correo electrónico) */
+.recover-form input {
+  width: 100%;                        /* Que ocupe todo el ancho disponible */
+  padding: 10px;                      /* Espaciado interior */
+  margin-bottom: 15px;               /* Espacio entre campos */
+  border: 1px solid #ccc;            /* Borde gris claro */
+  border-radius: 6px;                /* Bordes redondeados */
+  font-size: 14px;                   /* Tamaño de fuente cómodo */
+  box-sizing: border-box;            /* Incluye padding y border en el ancho total */
+}
+
+/* Botón para enviar */
+.recover-button {
+  background-color: #74B9E7;         /* Color azul */
+  color: #000;                       /* Texto negro */
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Botón al pasar el cursor */
+.recover-button:hover {
+  background-color: #5fa8d3;         /* Azul más oscuro al hover */
+}
+
+/* Enlace para volver al login */
+.back-to-login {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.back-to-login:hover {
+  text-decoration: underline;        /* Subrayado al pasar el mouse */
+}

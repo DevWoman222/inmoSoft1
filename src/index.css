@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  
+
+  
+  
+  html, body, #root{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  }
+  
+  body{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  
+  }
+  
+  .app-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  }
+  
+  main{
+  flex: 1;
+  
+  }
+
+  .scroll-to-top { 
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: aquamarine;
+    color: aliceblue;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 2px 8px rgba(rgb(10, 0, 0), green, blue, alpha);
+    transition: opacity 0.3s ease;
+  }

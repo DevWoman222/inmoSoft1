@@ -1,0 +1,36 @@
+.filtros-avanzados {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  border-top: 1px solid #74B9E7;
+  padding-top: 15px;
+}
+
+.grupo-avanzado {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  gap: 5px;
+}
+
+.grupo-avanzado label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.grupo-avanzado input,
+.grupo-avanzado select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #74B9E7;
+  font-size: 14px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

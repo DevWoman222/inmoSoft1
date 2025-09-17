@@ -1,0 +1,96 @@
+.detalle-apartamento-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #e0dede;
+}
+
+.galeria-fotos h2,
+.info-apartamento h2 {
+  color: #74B9E7;
+  font-family: Arial Black
+}
+
+.imagenes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.imagenes-grid img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.info-apartamento {
+  max-width: 700px;         /* Limita el ancho del bloque */
+  margin-left: 2rem;        /* Alinea a la izquierda */
+  margin-top: 2rem;
+  background-color: #eae7e7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #74B9E7;
+  
+  
+} 
+
+.info-apartamento h3 {
+  margin-top: 20px;
+  color: #74B9E7;
+  font-family: Arial Black
+}
+
+
+
+.detalle-apartamento-container {
+  padding-top: 80px; /* o margin-top si prefieres */
+}
+
+.galeria-fotos {
+  margin-bottom: 20px; /* separación con lo de abajo */
+  margin-top: 40px;
+}
+
+
+
+.imagen-grande {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.galeria-fotos {
+  margin-bottom: 20px;
+}
+
+.imagen-carrusel {
+
+  margin-top: 40px;
+  display: block;          /* Necesario para que margin funcione */
+  margin: 0 auto;          /* Centra horizontalmente */
+  width: 100%;
+  max-width: 800px;        /* Tamaño máximo (ajústalo a tu gusto) */
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+

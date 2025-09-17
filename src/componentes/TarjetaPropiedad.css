@@ -1,0 +1,55 @@
+.tarjeta-propiedad {
+  width: 260px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta-propiedad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-inmueble {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.info-propiedad {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ubicacion {
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.operacion {
+  font-size: 14px;
+  color: #e63946; /* rojo profesional */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1d3557; /* azul oscuro elegante */
+}
+
+.center-box {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  height: 200px;           /* altura del contenedor */
+}
