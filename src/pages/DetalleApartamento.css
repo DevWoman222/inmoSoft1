@@ -2,85 +2,61 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #e0dede;
+  padding-top: 80px;
 }
 
-.galeria-fotos h2,
-.info-apartamento h2 {
-  color: #74B9E7;
-  font-family: Arial Black
+/* --- Info y mapa en dos columnas --- */
+.detalle-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 2rem;
 }
-
-.imagenes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.imagenes-grid img {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-
 
 .info-apartamento {
-  max-width: 700px;         /* Limita el ancho del bloque */
-  margin-left: 2rem;        /* Alinea a la izquierda */
-  margin-top: 2rem;
+  flex: 1;
   background-color: #eae7e7;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 20px #74B9E7;
-  
-  
-} 
-
-.info-apartamento h3 {
-  margin-top: 20px;
-  color: #74B9E7;
-  font-family: Arial Black
+  max-width: 50%;
 }
 
-
-
-.detalle-apartamento-container {
-  padding-top: 80px; /* o margin-top si prefieres */
-}
-
-.galeria-fotos {
-  margin-bottom: 20px; /* separación con lo de abajo */
-  margin-top: 40px;
-}
-
-
-
-.imagen-grande {
-  max-width: 90%;
-  max-height: 90%;
+.mapa-apartamento {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
   border-radius: 10px;
+  box-shadow: 0 0 20px #74B9E7;
+  max-width: 50%;
 }
 
-.galeria-fotos {
-  margin-bottom: 20px;
+.mapa-apartamento h3 {
+  margin-bottom: 10px;
+  color: #070707;
+  font-family: Arial rgb(4, 4, 4);
 }
 
-.imagen-carrusel {
-
-  margin-top: 40px;
-  display: block;          /* Necesario para que margin funcione */
-  margin: 0 auto;          /* Centra horizontalmente */
+/* Estilos del mapa Leaflet */
+.leaflet-container {
   width: 100%;
-  max-width: 800px;        /* Tamaño máximo (ajústalo a tu gusto) */
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* --- Galería --- */
+.imagen-carrusel {
+  margin-top: 40px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
   max-height: 400px;
   object-fit: cover;
   border-radius: 12px;
   cursor: pointer;
 }
 
+/* Modal imagen */
 .modal {
   position: fixed;
   top: 0;
@@ -92,5 +68,11 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+}
+
+.imagen-grande {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
 }
 

@@ -17,6 +17,7 @@ import QuienesSomos from "./pages/QuienesSomos";
 import PreguntasFrecuentes from './pages/PreguntasFrecuentes.jsx';
 import Proyectos from './pages/Proyectos.jsx';
 import Ajustes from './pages/Ajustes.jsx';
+import 'leaflet/dist/leaflet.css';
 
 function App() {
   return (
